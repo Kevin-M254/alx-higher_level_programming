@@ -1,26 +1,24 @@
-#include "lists.h"
-
-listint_t *reverse_listint(listint_t **head);
-int is_palindrome(listint_t **head);
+#ifndef LISTS_H
+#define LISTS_H
 
 /**
- * reverse_listint - Reverse a singly linked list.
- * @head: header node
+ * struct listint_s - singly linked list
+ * @n: integer
+ * @next: points to the next node
  *
- * Return: Pointer to the head of reversed list/
+ * Description: singly linked list node structure
+ * for project
  */
-listint_t *reverse_listint(listint_t **head)
+typedef struct listint_s
 {
-	listint_t *node = *head, *next, *prev = NULL;
+	int n;
+	struct listint_s *next;
+} listint_t;
 
-	while (node)
-	{
-		next = node->next;
-		node->next = prev;
-		prev = node;
-		node = next;
-	}
+size_t print_listint(const listint_t *h);
+listint_t *add_nodeint_end(listint_t **head, const int n);
+void free_listint(listint_t *head);
 
-	*head = prev;
-	return (*head);
-}
+int is_palindrome(listint_t **head);
+
+#endif /* LISTS_H */

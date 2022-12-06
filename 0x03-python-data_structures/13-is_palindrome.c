@@ -30,7 +30,7 @@ listint_t *reverse_listint(listint_t **head);
  * @head: pointer to header node
  *
  * Return: 0 if list is not a palindrome.
- * 	1 if palinddrome.
+ *	1 if palinddrome.
  */
 int is_palindrome(listint_t **head)
 {
