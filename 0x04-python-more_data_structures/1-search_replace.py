@@ -1,4 +1,4 @@
-#!/bin/usr/env
+#!/bin/usr/python3
 
 
 def search_replace(my_list, search, replace):
