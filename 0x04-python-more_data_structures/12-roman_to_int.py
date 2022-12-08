@@ -21,19 +21,19 @@ def roman_to_int(roman_string):
             n.append(500)
         if i == 'M':
             n.append(1000)
-        result = 0
-        bool = False
-        for x in range(len(n)):
-            if bool is True:
-                bool = False
+    result = 0
+    bool = False
+    for x in range(len(n)):
+        if bool is True:
+            bool = False
+            continue
+        if (x + 1) < len(n):
+            if n[x] < n[x + 1]:
+                result += n[x + 1] - n[x]
+                bool = True
                 continue
-            if (x + 1) < len((n)):
-                if n[x] < n[x + 1]:
-                    result += n[x + 1] - n[x]
-                    bool = True
-                    continue
-                else:
-                    result += n[x]
-            if (x + 1) == len(n):
+            else:
                 result += n[x]
-        return result
+        if (x + 1) == len(n):
+            result += n[x]
+    return result
