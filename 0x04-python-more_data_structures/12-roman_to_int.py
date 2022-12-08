@@ -28,11 +28,12 @@ def roman_to_int(roman_string):
                 bool = False
                 continue
             if (x + 1) < len((n)):
-                if n[x] < n[x + 1] - n[x]
-                bool = True
-                continue
-            else:
+                if n[x] < n[x + 1]:
+                    result += n[x + 1] - n[x]
+                    bool = True
+                    continue
+                else:
+                    result += n[x]
+            if (x + 1) == len(n):
                 result += n[x]
-        if (x + 1) == len(n):
-            result += n[x]
-    return result
+        return result
