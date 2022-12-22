@@ -5,6 +5,7 @@
     For multiples of both 3 and 5, print FizzBuzz instead of th no.
 """
 
+
 def fizzbuzz():
     for number in range(1, 101):
         if number % 3 == 0 and number % 5 == 0:
