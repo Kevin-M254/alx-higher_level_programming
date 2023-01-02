@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 """
+
     This module comprises a function that divides the nubers of a matrix
 
 """
+
 
 def matrix_divided(matrix, div):
     """Function that divides the numbers of a matrix
@@ -21,6 +23,7 @@ def matrix_divided(matrix, div):
                    If the lists of the matrix dont have the same size
 
         ZeroDivisionError: If div is zero
+
 
     """
 
