@@ -4,6 +4,7 @@ This module comprises of a function that adds two numbers
 
 """
 
+
 def add_integer(a, b=98):
     """Function that adds two integers and/or float numbers
     Args:
