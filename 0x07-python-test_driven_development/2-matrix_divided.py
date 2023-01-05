@@ -36,7 +36,7 @@ def matrix_divided(matrix, div):
     msg_type = "matrix must be a matrix (list of lists) of integers/floats"
 
     if not matrix or not isinstance(matrix, list):
-        raise TypeError(msq_type)
+        raise TypeError(msg_type)
 
     len_e = 0
     msg_size = "Each row of the matrix must have the same size"
